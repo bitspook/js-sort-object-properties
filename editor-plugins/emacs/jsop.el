@@ -1,20 +1,19 @@
-;;; css-comb.el --- Sort CSS properties in a particular order using CSS Comb
+;;; jsop.el --- Sort Javascript object properties in ascending order using js-sort-object-properties
 
 ;; Copyright (C) 2015 Charanjit Singh <ckhabra@gmail.com>
 
 ;; Author: Charanjit Singh <ckhabra@gmail.com>
-;; Version: 0.2
-;; URL: https://github.com/channikhabra/css-comb.el
+;; Version: 0.1
+;; URL: https://github.com/channikhabra/js-sort-object-properties/editor-plugins/emacs
 
 ;;; Commentary:
 
-;; Wraps csscomb (https://github.com/csscomb/csscomb.js) for
-;; convenient use in Emacs.  Provides an interactive command `css-comb'.
-;; Beautifies combed css if web-beautify package is installed (recommended)
+;; Wraps jsop (https://github.com/channikhabra/js-sort-object-properties) for
+;; convenient use in Emacs.  Provides an interactive command `jsop'.
 
 ;;; Code:
 
-(defvar jsop-executable "/Users/madbonze/.nvm/versions/node/v5.10.1/bin/jsop")
+(defvar jsop-executable "jsop")
 
 (defun command-not-found-message (program)
   "Construct a message about PROGRAM not found."
@@ -47,4 +46,5 @@ Sorting is done according to the jsop command."
    beg end))
 
 (provide 'jsop)
+
 ;;; jsop.el ends here
