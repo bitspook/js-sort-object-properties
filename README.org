@@ -5,7 +5,7 @@ It's a small npm module for sorting object properties in javascript code.
 /Status:/ Very alpha
 ** Demo (in Emacs)
 
-https://i.imgur.com/X4f17dr.gif
+[[https://i.imgur.com/X4f17dr.gif]]
 
 ** Installation
 :PROPERTIES:
