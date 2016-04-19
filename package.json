@@ -1,0 +1,23 @@
+{
+  "name": "js-sort-object-props",
+  "version": "0.1.0",
+  "description": "Sort properties in a javascript object",
+  "main": "src/index.js",
+  "bin": {
+    "jsop": "bin/index.js"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "Charanjit Singh <ckhabra@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "escodegen": "^1.8.0",
+    "esprima": "^2.7.2",
+    "estraverse": "^4.2.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
