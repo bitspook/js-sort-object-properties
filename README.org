@@ -3,13 +3,19 @@
 It's a small npm module for sorting object properties in javascript code.
 
 /Status:/ Very alpha
+** Demo (in Emacs)
+
+https://i.imgur.com/X4f17dr.gif
 
 ** Installation
 :PROPERTIES:
 :ID:       718304C8-8F74-4503-AB94-702CCB0192AC
 :END:
 
-I haven't published it to npm yet (it's in early alpha atm), so you gotta clone the repository and do an ~npm install~ or ~npm link~
+#+BEGIN_SRC sh
+npm install js-sort-object-properties -g
+#+END_SRC
+
 
 ** Usage
 
