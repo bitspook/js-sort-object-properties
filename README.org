@@ -1,0 +1,54 @@
+* js-sort-object-properties
+
+It's a small npm module for sorting object properties in javascript code.
+
+/Status:/ Very alpha
+
+** Installation
+:PROPERTIES:
+:ID:       718304C8-8F74-4503-AB94-702CCB0192AC
+:END:
+
+I haven't published it to npm yet (it's in early alpha atm), so you gotta clone the repository and do an ~npm install~ or ~npm link~
+
+** Usage
+
+Installing/linking this package will expose a single command named ~jsop~. ~jsop~ accepts no arguments. It takes input from stdin and provides output to stdout. If your code is correct, you'll get same code as output with all the objects' properties sorted. Else it'll fail in your face, so keep an eye for a quick jab.
+
+#+BEGIN_SRC bash
+echo "var o = {c: 'c', a: 'a', b: 'b'}" | jsop
+#+END_SRC
+
+#+results:
+var o = {
+  a:   'a',
+  b:   'b',
+  c:   'c'
+};
+
+#+BEGIN_SRC bash
+cat myJsFile.js | jsop > myJsFile.js
+#+END_SRC
+
+*** Warning
+
+Currently if you pass it an object (e.g ~{a: 'a'}~), it fails. That one is on esprima. I'll fix it in the future. Just watch out for now.
+Make sure you pass it the object with the indentifier you bind it to. e.g ~var o = {a: 'a'};~
+
+** Editor plugins
+
+My real intention to create this package is to use it from within my text-editor. I wanted to just select an object, and sort its properties with a key combination. ~./editor-plugins~ directory has plugins for following editors:
+
+*** Emacs
+
+Emacs is the only supported editor as of now (because it's the only editor I use these days).
+
+**** Install
+
+Just put the ~./editor-plugins/emacs/jsop.el~ somewhere on your ~load-path~ and you're good to go.
+
+**** Usage
+
+- Install the [[id:718304C8-8F74-4503-AB94-702CCB0192AC][npm package]]
+- Select a javascript object
+- `M-x` and select `jsop`

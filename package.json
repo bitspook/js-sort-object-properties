@@ -1,5 +1,5 @@
 {
-  "name": "js-sort-object-props",
+  "name": "js-sort-object-properties",
   "version": "0.1.0",
   "description": "Sort properties in a javascript object",
   "main": "src/index.js",
